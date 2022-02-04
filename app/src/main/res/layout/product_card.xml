@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/_product_picture"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/_sample_product_image" />
+
+            <TextView
+                android:id="@+id/_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/_product_picture"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/_product_name"
+                android:layout_toEndOf="@id/_product_picture"
+                android:text="Product Description"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$495"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/_add_to_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/_product_price"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:src="@drawable/_add_to_cart_icon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
